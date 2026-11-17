@@ -1,0 +1,16 @@
+#container {
+    /*Flex ox things*/
+   display: grid;
+   min-height: 100vh; 
+   column-gap: 10px;
+   row-gap: 10px;
+   grid-template-areas: 
+       'hd hd hd hd'
+       'sec sec sec sec'
+       'sec sec sec sec'
+       'sec sec sec sec'
+       'ft ft ft ft';
+}
+.header {
+    
+}
