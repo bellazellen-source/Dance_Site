@@ -1,1 +1,62 @@
-/* Här skrivs all din CSS */
+
+#container {
+    /*Flex ox things*/
+   display: grid;
+    row-gap:10px;
+   grid-template-areas: 
+       'hd hd hd hd'
+       'sec sec sec sec'
+       'se se se se'
+       ' s1 s2 s3'
+       'ft ft ft ft';
+}
+
+body {
+   background-color:#F0DDCB ;
+}
+.img {
+    display:flex;
+    margin:50px;
+    width:auto;
+    height:auto;
+}
+.topp { /* topp box guide links */
+    display: flex;
+    grid-area: hd;
+    justify-content:space-around;
+    height:75px;
+    background-color:#F05BE3;
+}
+.first {
+    display: flex;
+    grid-area: sec;
+    height:450px;
+    background-color:#EF5C8B;
+}
+.below {
+    display: flex;
+    grid-area: se;
+    justify-content:space-around;
+    height:200px;
+    background-color:#F0C1EC;
+}
+.left {
+    display: flex;
+    grid-area: s1;  
+    min-height: 100px;
+    background-color: #745571; 
+}
+
+.middle {
+    display: flex;
+    grid-area: s2;  
+    min-height: 100px;
+    background-color: #c800b7;
+}
+
+.right {
+    display: flex;
+    grid-area: s3;
+    min-height: 100px;
+    background-color: #F05BE3;
+}
