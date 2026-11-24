@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+  }
+  
+  body {
+    background: rgb(27, 27, 27);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "he  he  he"
+      "c1  c2  c3"
+      "c4  c5  c6";
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .c1 { grid-area: c1; }
+  .c2 { grid-area: c2; }
+  .c3 { grid-area: c3; }
+  .c4 { grid-area: c4; }
+  .c5 { grid-area: c5; }
+  .c6 { grid-area: c6; }
+  
+  .uppbar {
+    grid-area: he;
+    width: 100%;
+    background-color: #141414;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  .uppbar a {
+    color: white;
+    margin-left: 20px;
+  }
+  
+  .uppbar a:hover {
+    color: #e040fb;
+  }
+
+  .name {
+    color: aliceblue;
+  }
+  
+  .card {
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .car-1 {
+    background-image: url(https://images.pexels.com/photos/6541629/pexels-photo-6541629.jpeg);
+  }
+  .car-2 {
+    background-image: url(https://images.pexels.com/photos/34110539/pexels-photo-34110539.jpeg);
+  }
+  .car-3 {
+    background-image: url(https://images.pexels.com/photos/6054329/pexels-photo-6054329.jpeg);
+  }
+  .car-4 {
+    background-image: url(https://images.pexels.com/photos/6789622/pexels-photo-6789622.jpeg);
+  }
+  .car-5 {
+    background-image: url(https://images.pexels.com/photos/9998652/pexels-photo-9998652.jpeg);
+  }
+  .car-6 {
+    background-image: url(https://images.pexels.com/photos/13989672/pexels-photo-13989672.jpeg);
+  }
+  
+  .card h2 {
+    padding: 10px;
+  }
+  
+  .card p {
+    padding: 10px;
+    line-height: 1.5;
+  }
+  
+  .card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+  }
